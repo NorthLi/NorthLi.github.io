@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skeleton/normalize.css">
+    <link rel="stylesheet" href="skeleton/skeleton.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <title>Wildlife Recorder</title>
+</head>
+<body>
+<div class="header-bg">
+    <h3>Wildlife Recorder</h3>
+</div>
+
+<div class="nav-area">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs tab2select" role="tablist">
+        <li role="presentation" class="active"><a href="#previous" aria-controls="previous" role="tab" data-toggle="tab" id="nav_previous_records">Previous Record</a></li>
+        <li role="presentation"><a href="#new" aria-controls="profile" role="tab" data-toggle="tab" id="nav_new_record">New Record</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div id="dialog" title="Confirmation Required">
+        Are you sure about this?
+    </div>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="previous">
+
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="new">
+            <form id="new_record">
+                <label for="userEmail">Your email</label>
+                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="userEmail" required>
+                <label for="observe_datetime">Observation Date & Time</label>
+                <input class="u-full-width" type="datetime-local" id="observe_datetime" required>
+                <label for="observe_place">Observation Place</label>
+                <input class="u-full-width" type="text" id="observe_place" required>
+                <label for="name_of_wildlife">Name of wildlife</label>
+                <input class="u-full-width" type="text" id="name_of_wildlife" required>
+                <label for="description">Description</label>
+                <textarea class="u-full-width" placeholder="e.g. size, color, behavior, etc" id="description" required></textarea>
+
+                <label for="upload_image">Upload image</label>
+                <input class="u-full-width" type="file" id="upload_image" required>
+                <input id="submit_new_record" class="button-primary" type="submit" value="Submit" id="submit_form">
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

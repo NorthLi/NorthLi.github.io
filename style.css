@@ -1,0 +1,90 @@
+.header-bg{
+    background-image:url("http://maxrinaldiphotography.com/wp-content/uploads/2012/08/Fish-vs-King.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    opacity: 0.85;
+    position:absolute;
+    width: 100%;
+    height: 120px;
+}
+.header-bg h3 {
+    color: white;
+    padding-left: 15px;
+    padding-top: 5px;
+    text-shadow: 2px 1px gray;
+}
+.nav-tabs {
+    border-bottom: 0;
+}
+.nav-area {
+    padding-top: 90px;
+}
+
+.nav>li>a {
+    padding: 5px 10px;
+    color: white;
+}
+
+.img-rounded{
+    position: relative;
+    height: 90px;
+    left: 0;
+    top: 20px;
+    border-radius: 6px;
+    border: 0;
+    float: left;
+}
+.card-text{
+    position: relative;
+    top: 0;
+    left: 20px;
+    float: left;
+    max-width: 200px;
+}
+.card-text>p{
+    margin:0;
+    font-size: 1rem;
+}
+.card-text>h5{
+    margin:0;
+}
+.card-button{
+    height: 25px;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    padding: 3px;
+}
+.card{
+    margin: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    overflow: auto;
+}
+
+.tab-pane>form{
+    margin: 30px;
+}
+.mobile-tab-headings {display: none; padding:10px; }
+.mobile-tab-heading option{padding:10px;}
+@media only screen and (max-width:768px) {
+    .mobile-tab-headings { width: 100%; display: block;   }
+    .mobile-tab-headings + .nav-tabs { display: none;   }
+}
+
+/* For upload button */
+.imgInp{
+    width:150px;
+    margin-top:10px;
+    padding:10px;
+    background-color:#d3d3d3;
+}
+.custom-file-label{
+    cursor:pointer;
+}
